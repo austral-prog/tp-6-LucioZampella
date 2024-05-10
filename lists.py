@@ -1,12 +1,11 @@
-
 def remove_elements(list_to_remove_elements):
     if len(list_to_remove_elements) >= 6:
-        del list_to_remove_elements[0]
-        del list_to_remove_elements[3] 
-        del list_to_remove_elements[3]  
+        del list_to_remove_elements[5]
+        del list_to_remove_elements[4] 
+        del list_to_remove_elements[0]  
     elif len(list_to_remove_elements) >=5:
+        del list_to_remove_elements[4]
         del list_to_remove_elements[0]
-        del list_to_remove_elements[3]
     else:
         del list_to_remove_elements[0]
 
@@ -30,9 +29,9 @@ print(add_elements(['Red', 'Green', 'White', 'Black']))
 
 def is_empty(list_to_check):
     if len(list_to_check) == 0:
-        return "La lista esta vacia"
+        return True
     else:
-        return "La lista no esta vacia"
+        return False
 
 print(is_empty(""))
 
@@ -55,6 +54,6 @@ def list_of_lists(list_of_lists_to_modify):
     c = list_of_lists_to_modify[2][-2:]
     list_of_lists_to_modify = [a, b, c]
     return list_of_lists_to_modify
-    
+
 print(list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]]))
     
